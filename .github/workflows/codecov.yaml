@@ -24,7 +24,11 @@ jobs:
         with:
           go-version: 1.16
       - name: Test backend-shared
-        run: make test
+        run: |
+          cd ..
+          ./create-dev-env.sh
+          cd backend-shared
+          make test
         working-directory: ./backend-shared
       - name: Test backend
         run: make test

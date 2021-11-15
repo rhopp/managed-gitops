@@ -50,6 +50,7 @@ type ApplicationResource struct {
 
 // Creating a webservice for application endpoints
 func (a ApplicationResource) Register(container *restful.Container) {
+	log.Printf("test")
 	ws := new(restful.WebService)
 	ws.
 		Path("/api/v1/application").

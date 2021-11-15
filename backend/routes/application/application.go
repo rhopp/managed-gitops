@@ -48,6 +48,13 @@ type ApplicationResource struct {
 	Applications map[string]Application `json:"applications"`
 }
 
+func ArbitratyFunction() {
+	log.Printf("test")
+	if true {
+		log.Printf("Arbitrary lowering code coverage")
+	}
+}
+
 // Creating a webservice for application endpoints
 func (a ApplicationResource) Register(container *restful.Container) {
 	log.Printf("test")

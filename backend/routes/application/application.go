@@ -55,6 +55,13 @@ func ArbitratyFunction() {
 	}
 }
 
+func ArbitratyFunction2() {
+	log.Printf("test")
+	if true {
+		log.Printf("Arbitrary lowering code coverage")
+	}
+}
+
 // Creating a webservice for application endpoints
 func (a ApplicationResource) Register(container *restful.Container) {
 	log.Printf("test")

@@ -18,6 +18,7 @@ package controllers
 
 import (
 	"context"
+	"fmt"
 
 	"k8s.io/apimachinery/pkg/runtime"
 	ctrl "sigs.k8s.io/controller-runtime"
@@ -66,4 +67,11 @@ func (r *OperationReconciler) SetupWithManager(mgr ctrl.Manager) error {
 	return ctrl.NewControllerManagedBy(mgr).
 		For(&managedgitopsv1alpha1.Operation{}).
 		Complete(r)
+}
+
+func ArbitratyFunction() {
+	fmt.Print("Test")
+	if true {
+		fmt.Print("Test")
+	}
 }

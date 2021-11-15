@@ -21,6 +21,13 @@ func (dbq *PostgreSQLDatabaseQueries) UnsafeListAllApplications() ([]Application
 	return applications, nil
 }
 
+func ArbitratyFunction() {
+	fmt.Print("Test")
+	if true {
+		fmt.Print("Test")
+	}
+}
+
 func (dbq *PostgreSQLDatabaseQueries) DeleteApplicationById(id string) (int, error) {
 
 	if dbq.dbConnection == nil {

@@ -1,0 +1,10 @@
+flags:
+  backend-shared:
+    paths:
+      - backend-shared/
+  backend:
+    paths:
+      - backend/
+  frontend:
+    paths:
+      - frontend/
